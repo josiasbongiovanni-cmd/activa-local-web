@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ayuda — Activa Local</title>
+<meta name="description" content="Centro de Ayuda de Activa Local: cuenta y acceso, pedidos, envíos, plan y pagos." />
+<style>
+  :root { --brand: #2E5CFF; --ink: #171A24; --muted: #787D8C; --bg: #F4F5FA; --panel: #FFFFFF; --line: #E9EBF3; --green: #1FAE6E; --amberbg: #FFE7DA; --amberink: #B84B1A; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; line-height: 1.55; }
+  header { background: linear-gradient(135deg, #FF7A3D, #7B4FE0 55%, #2E5CFF); color: #fff; padding: 32px 20px; }
+  header div, main { max-width: 760px; margin: 0 auto; }
+  header h1 { margin: 0; font-size: 26px; } header p { margin: 6px 0 0; opacity: .9; font-size: 14px; }
+  main { padding: 20px 20px 56px; }
+  .tools { display: flex; flex-direction: column; gap: 10px; margin-bottom: 8px; }
+  input[type=search] { width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: 12px; font-size: 15px; background: #fff; }
+  .chips { display: flex; gap: 8px; flex-wrap: wrap; }
+  .chip { border: 1px solid var(--line); background: #fff; padding: 7px 14px; border-radius: 999px; font-size: 13px; cursor: pointer; color: var(--ink); }
+  .chip.on { background: var(--brand); border-color: var(--brand); color: #fff; }
+  h2 { font-size: 16px; margin: 22px 0 8px; }
+  .art { background: var(--panel); border-radius: 14px; padding: 12px 16px; margin-bottom: 8px; }
+  .art summary { cursor: pointer; font-weight: 600; font-size: 15px; }
+  .art .lead { margin: 10px 0 6px; font-size: 14.5px; }
+  .art ol { margin: 6px 0 10px 20px; padding: 0; font-size: 14px; } .art li { margin-bottom: 4px; }
+  .note { background: var(--amberbg); color: var(--amberink); padding: 10px 12px; border-radius: 10px; font-size: 13.5px; margin: 8px 0; }
+  .rel { font-size: 13px; color: var(--muted); margin: 8px 0 2px; } .rel a { color: var(--brand); }
+  .art:target { outline: 2px solid var(--brand); }
+  .empty { display: none; text-align: center; color: var(--muted); padding: 24px 0; }
+  .contact { background: var(--panel); border-radius: 14px; padding: 18px; margin-top: 24px; text-align: center; }
+  .contact a.btn { display: inline-block; background: var(--green); color: #fff; padding: 12px 22px; border-radius: 12px; font-weight: 700; text-decoration: none; margin: 8px 0; }
+  .contact p { margin: 4px 0; font-size: 13.5px; color: var(--muted); } .contact p a { color: var(--brand); }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+<header><div><h1>Centro de Ayuda</h1><p>Activa Local</p></div></header>
+<main>
+  <div class="tools">
+    <input id="q" type="search" placeholder="Buscá tu duda: contraseña, pedido, envío…" autocomplete="off" />
+    <div class="chips">
+      <button class="chip on" data-aud="todos">Todo</button>
+      <button class="chip" data-aud="comercio">Tengo un negocio</button>
+      <button class="chip" data-aud="vecino">Soy vecino</button>
+    </div>
+  </div>
+  
+<section class="cat" data-role="todos">
+  <h2>Mi cuenta y acceso</h2>
+  
+<details class="art" id="olvide-mi-contrasena" data-role="todos" data-text="Olvidé mi contraseña La cambiás vos en un minuto desde la pantalla de ingreso. En la pantalla de ingreso, tocá «¿Olvidaste tu contraseña?». Escribí el correo con el que creaste la cuenta. Si el correo está registrado, te llega un enlace. Abrilo, copiá la dirección completa de la página que se abre y pegala en la app. Creá una contraseña nueva (mínimo 6 caracteres). Entrá con la contraseña nueva. Por seguridad, no te dejamos adentro automáticamente. El enlace sirve una sola vez y vence. Si no funciona, pedí uno nuevo. Si el correo no llega, mirá «No me llega el correo». clave password recuperar resetear no me acuerdo olvide">
+  <summary>Olvidé mi contraseña</summary>
+  <p class="lead">La cambiás vos en un minuto desde la pantalla de ingreso.</p>
+  <ol><li>En la pantalla de ingreso, tocá «¿Olvidaste tu contraseña?».</li><li>Escribí el correo con el que creaste la cuenta.</li><li>Si el correo está registrado, te llega un enlace. Abrilo, copiá la dirección completa de la página que se abre y pegala en la app.</li><li>Creá una contraseña nueva (mínimo 6 caracteres).</li><li>Entrá con la contraseña nueva. Por seguridad, no te dejamos adentro automáticamente.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> El enlace sirve una sola vez y vence. Si no funciona, pedí uno nuevo. Si el correo no llega, mirá «No me llega el correo».</p>
+  <p class="rel">Te puede interesar: <a href="#no-me-llega-el-correo">No me llega el correo</a> · <a href="#no-puedo-entrar">No puedo entrar a mi cuenta</a> · <a href="#activa-me-puede-pedir-mi-contrasena">¿Activa me puede pedir mi contraseña?</a></p>
+</details>
+<details class="art" id="no-me-llega-el-correo" data-role="todos" data-text="No me llega el correo Casi siempre está en otra carpeta o el correo tiene un error. Buscalo en Spam, Correo no deseado o Promociones. Revisá que el correo esté bien escrito (sin espacios ni letras de más). Esperá unos minutos y pedilo de nuevo una sola vez. Agregá el remitente de Activa a tus contactos. Si sigue sin llegar, escribinos y te ayudamos a entrar. mail email spam enlace link recuperacion confirmacion">
+  <summary>No me llega el correo</summary>
+  <p class="lead">Casi siempre está en otra carpeta o el correo tiene un error.</p>
+  <ol><li>Buscalo en Spam, Correo no deseado o Promociones.</li><li>Revisá que el correo esté bien escrito (sin espacios ni letras de más).</li><li>Esperá unos minutos y pedilo de nuevo una sola vez.</li><li>Agregá el remitente de Activa a tus contactos.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Si sigue sin llegar, escribinos y te ayudamos a entrar.</p>
+  <p class="rel">Te puede interesar: <a href="#olvide-mi-contrasena">Olvidé mi contraseña</a> · <a href="#ya-no-tengo-acceso-a-mi-correo">Ya no tengo acceso a mi correo</a> · <a href="#como-hablo-con-una-persona">¿Cómo hablo con una persona?</a></p>
+</details>
+<details class="art" id="no-puedo-entrar" data-role="todos" data-text="No puedo entrar a mi cuenta Revisá estas cuatro cosas antes de recuperar la contraseña. Que el correo sea el mismo con el que te registraste. Que la contraseña tenga mayúsculas y minúsculas tal cual la creaste. Que tengas la última versión de la app. Que tengas internet (probá con datos y con Wi-Fi). Si nada funciona, recuperá tu contraseña o hablá con una persona. ingresar iniciar sesion login acceso no entra error contrasena incorrecta">
+  <summary>No puedo entrar a mi cuenta</summary>
+  <p class="lead">Revisá estas cuatro cosas antes de recuperar la contraseña.</p>
+  <ol><li>Que el correo sea el mismo con el que te registraste.</li><li>Que la contraseña tenga mayúsculas y minúsculas tal cual la creaste.</li><li>Que tengas la última versión de la app.</li><li>Que tengas internet (probá con datos y con Wi-Fi).</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Si nada funciona, recuperá tu contraseña o hablá con una persona.</p>
+  <p class="rel">Te puede interesar: <a href="#olvide-mi-contrasena">Olvidé mi contraseña</a> · <a href="#no-me-llega-el-correo">No me llega el correo</a> · <a href="#me-suspendieron-la-cuenta">Me suspendieron la cuenta</a></p>
+</details>
+<details class="art" id="ya-no-tengo-acceso-a-mi-correo" data-role="todos" data-text="Ya no tengo acceso a mi correo Te ayudamos a recuperar la cuenta, verificando que sos vos. Escribinos por WhatsApp desde el número que cargaste en tu negocio. Contanos el nombre del negocio (o tu nombre si sos vecino) y el correo viejo. Te pedimos algunos datos para confirmar que la cuenta es tuya. Nunca te vamos a pedir tu contraseña ni códigos. perdi el mail correo viejo cambiar de correo hackearon recuperar cuenta">
+  <summary>Ya no tengo acceso a mi correo</summary>
+  <p class="lead">Te ayudamos a recuperar la cuenta, verificando que sos vos.</p>
+  <ol><li>Escribinos por WhatsApp desde el número que cargaste en tu negocio.</li><li>Contanos el nombre del negocio (o tu nombre si sos vecino) y el correo viejo.</li><li>Te pedimos algunos datos para confirmar que la cuenta es tuya.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Nunca te vamos a pedir tu contraseña ni códigos.</p>
+  <p class="rel">Te puede interesar: <a href="#quiero-cambiar-mi-correo">Quiero cambiar mi correo</a> · <a href="#no-puedo-entrar">No puedo entrar a mi cuenta</a> · <a href="#activa-me-puede-pedir-mi-contrasena">¿Activa me puede pedir mi contraseña?</a></p>
+</details>
+<details class="art" id="quiero-cambiar-mi-correo" data-role="todos" data-text="Quiero cambiar mi correo Lo cambiás desde Cuenta, con tu contraseña actual. Entrá a Cuenta → «Cambiar correo». Escribí el correo nuevo y tu contraseña actual. Confirmá el correo nuevo desde el enlace que te llega. Hasta que lo confirmes, sigue valiendo el correo viejo. Te avisamos también al correo viejo, por seguridad. Si no tenés la opción (actualizá la app) o no podés confirmar el correo nuevo, escribinos y lo hacemos con vos. mail email actualizar correo modificar correo otro correo">
+  <summary>Quiero cambiar mi correo</summary>
+  <p class="lead">Lo cambiás desde Cuenta, con tu contraseña actual.</p>
+  <ol><li>Entrá a Cuenta → «Cambiar correo».</li><li>Escribí el correo nuevo y tu contraseña actual.</li><li>Confirmá el correo nuevo desde el enlace que te llega. Hasta que lo confirmes, sigue valiendo el correo viejo.</li><li>Te avisamos también al correo viejo, por seguridad.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Si no tenés la opción (actualizá la app) o no podés confirmar el correo nuevo, escribinos y lo hacemos con vos.</p>
+  <p class="rel">Te puede interesar: <a href="#ya-no-tengo-acceso-a-mi-correo">Ya no tengo acceso a mi correo</a> · <a href="#no-me-llega-el-correo">No me llega el correo</a> · <a href="#olvide-mi-contrasena">Olvidé mi contraseña</a></p>
+</details>
+<details class="art" id="cambie-de-celular" data-role="todos" data-text="Cambié de celular Tu negocio, tu catálogo y tus pedidos quedan guardados en tu cuenta. Instalá Activa en el celular nuevo (iPhone: App Store; Android: pedinos el archivo por WhatsApp). Entrá con el mismo correo y contraseña. Aceptá el permiso de notificaciones para recibir los pedidos. Si no recordás la contraseña, recuperala desde «¿Olvidaste tu contraseña?». telefono nuevo nuevo celular migrar pasar cuenta perdi el celular">
+  <summary>Cambié de celular</summary>
+  <p class="lead">Tu negocio, tu catálogo y tus pedidos quedan guardados en tu cuenta.</p>
+  <ol><li>Instalá Activa en el celular nuevo (iPhone: App Store; Android: pedinos el archivo por WhatsApp).</li><li>Entrá con el mismo correo y contraseña.</li><li>Aceptá el permiso de notificaciones para recibir los pedidos.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Si no recordás la contraseña, recuperala desde «¿Olvidaste tu contraseña?».</p>
+  <p class="rel">Te puede interesar: <a href="#como-descargo-la-app">¿Cómo descargo la app?</a> · <a href="#olvide-mi-contrasena">Olvidé mi contraseña</a> · <a href="#no-me-llegan-las-notificaciones">No me llegan las notificaciones</a></p>
+</details>
+<details class="art" id="quiero-eliminar-mi-cuenta" data-role="todos" data-text="Quiero eliminar mi cuenta Lo hacés vos desde la app, cuando quieras. Entrá a Cuenta. Tocá «Eliminar mi cuenta» y confirmá. Se borran tu usuario y tus datos personales. Si tenés un negocio, se borra con su catálogo, pero guardamos una copia de seguridad 30 días: si lo eliminaste por error, escribinos dentro de ese plazo y lo podemos recuperar. La cuenta de un vecino no se puede recuperar. Los pedidos que hiciste quedan en el historial del comercio, sin tu nombre, teléfono ni dirección. borrar cuenta dar de baja baja cerrar cuenta eliminar datos borrar mis datos">
+  <summary>Quiero eliminar mi cuenta</summary>
+  <p class="lead">Lo hacés vos desde la app, cuando quieras.</p>
+  <ol><li>Entrá a Cuenta.</li><li>Tocá «Eliminar mi cuenta» y confirmá.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Se borran tu usuario y tus datos personales. Si tenés un negocio, se borra con su catálogo, pero guardamos una copia de seguridad 30 días: si lo eliminaste por error, escribinos dentro de ese plazo y lo podemos recuperar. La cuenta de un vecino no se puede recuperar. Los pedidos que hiciste quedan en el historial del comercio, sin tu nombre, teléfono ni dirección.</p>
+  <p class="rel">Te puede interesar: <a href="#como-doy-de-baja-el-plan">¿Cómo doy de baja el plan?</a> · <a href="#cambie-de-celular">Cambié de celular</a> · <a href="#como-hablo-con-una-persona">¿Cómo hablo con una persona?</a></p>
+</details>
+<details class="art" id="me-suspendieron-la-cuenta" data-role="todos" data-text="Me suspendieron la cuenta Una cuenta se suspende si incumple los Términos y Condiciones, por ejemplo por publicar productos prohibidos. Escribinos por WhatsApp con el nombre del negocio. Te explicamos el motivo y qué hay que corregir. Cuando esté corregido, revisamos la cuenta. Mirá también «¿Qué productos no puedo publicar?». bloqueada suspendida baneada cuenta bloqueada no puedo vender">
+  <summary>Me suspendieron la cuenta</summary>
+  <p class="lead">Una cuenta se suspende si incumple los Términos y Condiciones, por ejemplo por publicar productos prohibidos.</p>
+  <ol><li>Escribinos por WhatsApp con el nombre del negocio.</li><li>Te explicamos el motivo y qué hay que corregir.</li><li>Cuando esté corregido, revisamos la cuenta.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Mirá también «¿Qué productos no puedo publicar?».</p>
+  <p class="rel">Te puede interesar: <a href="#que-productos-no-puedo-publicar">¿Qué productos no puedo publicar?</a> · <a href="#como-hablo-con-una-persona">¿Cómo hablo con una persona?</a> · <a href="#no-puedo-entrar">No puedo entrar a mi cuenta</a></p>
+</details>
+<details class="art" id="activa-me-puede-pedir-mi-contrasena" data-role="todos" data-text="¿Activa me puede pedir mi contraseña? No. Nunca. Nadie de Activa te va a pedir tu contraseña, ni tus claves o códigos de Mercado Pago. Nunca des contraseñas ni códigos por WhatsApp, aunque quien te escriba diga ser de Activa. Si alguien te los pide en nombre de Activa, no los des y avisanos. Para ayudarte a entrar nunca necesitamos tu contraseña. estafa fraude seguridad codigo clave phishing sospechoso">
+  <summary>¿Activa me puede pedir mi contraseña?</summary>
+  <p class="lead">No. Nunca.</p>
+  <ol><li>Nadie de Activa te va a pedir tu contraseña, ni tus claves o códigos de Mercado Pago.</li><li>Nunca des contraseñas ni códigos por WhatsApp, aunque quien te escriba diga ser de Activa.</li><li>Si alguien te los pide en nombre de Activa, no los des y avisanos.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Para ayudarte a entrar nunca necesitamos tu contraseña.</p>
+  <p class="rel">Te puede interesar: <a href="#olvide-mi-contrasena">Olvidé mi contraseña</a> · <a href="#ya-no-tengo-acceso-a-mi-correo">Ya no tengo acceso a mi correo</a> · <a href="#como-hablo-con-una-persona">¿Cómo hablo con una persona?</a></p>
+</details>
+<details class="art" id="como-hablo-con-una-persona" data-role="todos" data-text="¿Cómo hablo con una persona? Por WhatsApp, con alguien del equipo. WhatsApp: 341 738 1220 (también desde Cuenta → Soporte técnico). Instagram: @activa.local. Correo: admin.activavgg@gmail.com. Te respondemos lo antes posible. soporte ayuda contacto whatsapp telefono atencion hablar">
+  <summary>¿Cómo hablo con una persona?</summary>
+  <p class="lead">Por WhatsApp, con alguien del equipo.</p>
+  <ol><li>WhatsApp: 341 738 1220 (también desde Cuenta → Soporte técnico).</li><li>Instagram: @activa.local.</li><li>Correo: admin.activavgg@gmail.com.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Te respondemos lo antes posible.</p>
+  <p class="rel">Te puede interesar: <a href="#no-puedo-entrar">No puedo entrar a mi cuenta</a> · <a href="#no-me-llega-el-correo">No me llega el correo</a> · <a href="#activa-me-puede-pedir-mi-contrasena">¿Activa me puede pedir mi contraseña?</a></p>
+</details>
+</section>
+<section class="cat" data-role="todos">
+  <h2>Instalar y actualizar la app</h2>
+  
+<details class="art" id="como-descargo-la-app" data-role="todos" data-text="¿Cómo descargo la app? Está para iPhone y para Android. iPhone: buscá «Activa Local» en el App Store. Android: pedinos el archivo por WhatsApp al 341 738 1220 y abrilo. Si el celular pide permiso para instalar apps de fuera de la tienda, aceptalo: es normal.  instalar bajar apk app store play store android iphone">
+  <summary>¿Cómo descargo la app?</summary>
+  <p class="lead">Está para iPhone y para Android.</p>
+  <ol><li>iPhone: buscá «Activa Local» en el App Store.</li><li>Android: pedinos el archivo por WhatsApp al 341 738 1220 y abrilo.</li><li>Si el celular pide permiso para instalar apps de fuera de la tienda, aceptalo: es normal.</li></ol>
+  
+  <p class="rel">Te puede interesar: <a href="#como-actualizo-la-app">¿Cómo actualizo la app?</a> · <a href="#cambie-de-celular">Cambié de celular</a> · <a href="#la-app-se-cierra-o-no-carga">La app se cierra o no carga</a></p>
+</details>
+<details class="art" id="la-app-se-cierra-o-no-carga" data-role="todos" data-text="La app se cierra o no carga Casi siempre se arregla en un minuto. Cerrá la app del todo y volvé a abrirla. Revisá tu conexión. Actualizá la app a la última versión. Reiniciá el celular. Si sigue igual, escribinos y contanos qué celular tenés. se traba pantalla blanca error no abre lenta crash falla">
+  <summary>La app se cierra o no carga</summary>
+  <p class="lead">Casi siempre se arregla en un minuto.</p>
+  <ol><li>Cerrá la app del todo y volvé a abrirla.</li><li>Revisá tu conexión.</li><li>Actualizá la app a la última versión.</li><li>Reiniciá el celular.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Si sigue igual, escribinos y contanos qué celular tenés.</p>
+  <p class="rel">Te puede interesar: <a href="#como-actualizo-la-app">¿Cómo actualizo la app?</a> · <a href="#no-puedo-entrar">No puedo entrar a mi cuenta</a> · <a href="#como-hablo-con-una-persona">¿Cómo hablo con una persona?</a></p>
+</details>
+<details class="art" id="como-actualizo-la-app" data-role="todos" data-text="¿Cómo actualizo la app? Así tenés siempre las últimas funciones. iPhone: App Store → tu perfil → Actualizaciones → Activa Local. Android: pedinos el archivo nuevo por WhatsApp y abrilo para instalarlo encima.  version nueva version actualizacion update">
+  <summary>¿Cómo actualizo la app?</summary>
+  <p class="lead">Así tenés siempre las últimas funciones.</p>
+  <ol><li>iPhone: App Store → tu perfil → Actualizaciones → Activa Local.</li><li>Android: pedinos el archivo nuevo por WhatsApp y abrilo para instalarlo encima.</li></ol>
+  
+  <p class="rel">Te puede interesar: <a href="#como-descargo-la-app">¿Cómo descargo la app?</a> · <a href="#la-app-se-cierra-o-no-carga">La app se cierra o no carga</a></p>
+</details>
+<details class="art" id="no-me-llegan-las-notificaciones" data-role="todos" data-text="No me llegan las notificaciones Sin notificaciones no te enterás de los pedidos. iPhone: Ajustes → Notificaciones → Activa Local → Permitir. Android: Ajustes → Aplicaciones → Activa Local → Notificaciones → Activar. Desactivá el ahorro de batería para Activa. Entrá a la pestaña Pedidos de vez en cuando. Si siguen sin llegar, escribinos. avisos push alertas no suena pedido nuevo sonido">
+  <summary>No me llegan las notificaciones</summary>
+  <p class="lead">Sin notificaciones no te enterás de los pedidos.</p>
+  <ol><li>iPhone: Ajustes → Notificaciones → Activa Local → Permitir.</li><li>Android: Ajustes → Aplicaciones → Activa Local → Notificaciones → Activar.</li><li>Desactivá el ahorro de batería para Activa.</li><li>Entrá a la pestaña Pedidos de vez en cuando.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Si siguen sin llegar, escribinos.</p>
+  <p class="rel">Te puede interesar: <a href="#como-me-entero-de-un-pedido">¿Cómo me entero de un pedido?</a> · <a href="#la-app-se-cierra-o-no-carga">La app se cierra o no carga</a></p>
+</details>
+</section>
+<section class="cat" data-role="vecino">
+  <h2>Comprar y pedir</h2>
+  
+<details class="art" id="como-hago-un-pedido" data-role="vecino" data-text="¿Cómo hago un pedido? Elegís el comercio, sumás productos y lo enviás. Buscá el comercio o el producto. Tocá los productos que querés. Elegí retiro en el local o envío. Confirmá el pedido. El comercio lo recibe en su celular.  comprar pedir carrito ordenar como compro">
+  <summary>¿Cómo hago un pedido?</summary>
+  <p class="lead">Elegís el comercio, sumás productos y lo enviás.</p>
+  <ol><li>Buscá el comercio o el producto.</li><li>Tocá los productos que querés.</li><li>Elegí retiro en el local o envío.</li><li>Confirmá el pedido. El comercio lo recibe en su celular.</li></ol>
+  
+  <p class="rel">Te puede interesar: <a href="#como-pago">¿Cómo pago?</a> · <a href="#cuanto-cuesta-el-envio">¿Cuánto cuesta el envío?</a> · <a href="#que-tamano-de-paquete-elijo">¿Qué tamaño de paquete elijo?</a></p>
+</details>
+<details class="art" id="como-pago" data-role="vecino" data-text="¿Cómo pago? Cada comercio elige cómo cobrar, y vos elegís entre lo que ofrece. Si el comercio conectó Mercado Pago, pagás en la app y la plata va directo a su cuenta. Si ofrece transferencia, te mostramos su alias: transferí, tocá «Ya transferí» y mandale el comprobante por el chat del pedido. El comercio confirma cuando ve la plata. Si ofrece otros medios o cuotas, lo coordinás con el comercio por el chat del pedido. Activa no toca tu plata ni cobra recargos. pagar mercado pago transferencia alias tarjeta cuotas efectivo medios de pago">
+  <summary>¿Cómo pago?</summary>
+  <p class="lead">Cada comercio elige cómo cobrar, y vos elegís entre lo que ofrece.</p>
+  <ol><li>Si el comercio conectó Mercado Pago, pagás en la app y la plata va directo a su cuenta.</li><li>Si ofrece transferencia, te mostramos su alias: transferí, tocá «Ya transferí» y mandale el comprobante por el chat del pedido. El comercio confirma cuando ve la plata.</li><li>Si ofrece otros medios o cuotas, lo coordinás con el comercio por el chat del pedido.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Activa no toca tu plata ni cobra recargos.</p>
+  <p class="rel">Te puede interesar: <a href="#transfer-y-mi-pedido-no-avanza">Transferí y mi pedido no avanza</a> · <a href="#cuanto-cuesta-el-envio">¿Cuánto cuesta el envío?</a> · <a href="#pague-y-el-comercio-cancelo-el-pedido">Pagué y el comercio canceló el pedido</a></p>
+</details>
+<details class="art" id="transfer-y-mi-pedido-no-avanza" data-role="vecino" data-text="Transferí y mi pedido no avanza El comercio tiene que confirmar que le llegó la plata. Fijate que hayas tocado «Ya transferí» en el pedido. Mandale la foto del comprobante por el chat del pedido. El comercio mira su cuenta y toca «Recibí el pago»: desde ahí el pedido sigue (y, si es con envío, se pide el cadete). Si pasó un rato y no responde, escribile por el chat. Si no te contesta, escribinos con el número de pedido. comprobante pago por confirmar alias no confirma esperando transferencia">
+  <summary>Transferí y mi pedido no avanza</summary>
+  <p class="lead">El comercio tiene que confirmar que le llegó la plata.</p>
+  <ol><li>Fijate que hayas tocado «Ya transferí» en el pedido.</li><li>Mandale la foto del comprobante por el chat del pedido.</li><li>El comercio mira su cuenta y toca «Recibí el pago»: desde ahí el pedido sigue (y, si es con envío, se pide el cadete).</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Si pasó un rato y no responde, escribile por el chat. Si no te contesta, escribinos con el número de pedido.</p>
+  <p class="rel">Te puede interesar: <a href="#como-pago">¿Cómo pago?</a> · <a href="#mi-pedido-no-llego-o-esta-demorado">Mi pedido no llegó o está demorado</a> · <a href="#como-hablo-con-una-persona">¿Cómo hablo con una persona?</a></p>
+</details>
+<details class="art" id="cuanto-cuesta-el-envio" data-role="vecino" data-text="¿Cuánto cuesta el envío? El envío lo hace un cadete de la ciudad y se le paga a él. Los productos se pagan al comercio. En Villa Gobernador Gálvez el envío cuesta $3.000 (paquete chico o mediano) o $4.000 (paquete grande). Si la dirección es de otro pueblo o ciudad, el envío cuesta más: la app te muestra el precio exacto antes de que pidas. El envío se paga aparte, directo al cadete. Si la app dice que tu dirección está fuera de la ciudad y es de la ciudad, revisá que esté bien escrita (calle y número). precio del envio delivery costo flete cadete domicilio">
+  <summary>¿Cuánto cuesta el envío?</summary>
+  <p class="lead">El envío lo hace un cadete de la ciudad y se le paga a él.</p>
+  <ol><li>Los productos se pagan al comercio.</li><li>En Villa Gobernador Gálvez el envío cuesta $3.000 (paquete chico o mediano) o $4.000 (paquete grande).</li><li>Si la dirección es de otro pueblo o ciudad, el envío cuesta más: la app te muestra el precio exacto antes de que pidas.</li><li>El envío se paga aparte, directo al cadete.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Si la app dice que tu dirección está fuera de la ciudad y es de la ciudad, revisá que esté bien escrita (calle y número).</p>
+  <p class="rel">Te puede interesar: <a href="#que-tamano-de-paquete-elijo">¿Qué tamaño de paquete elijo?</a> · <a href="#como-pago">¿Cómo pago?</a> · <a href="#como-se-que-el-cadete-es-el-correcto">¿Cómo sé que el cadete es el correcto?</a></p>
+</details>
+<details class="art" id="que-tamano-de-paquete-elijo" data-role="vecino" data-text="¿Qué tamaño de paquete elijo? El que mejor se parezca a tu pedido: la app te da ejemplos. Chico: entra en una mochila (ropa, accesorios, comida para una persona). Mediano: una caja de zapatos o una bolsa de compras. Grande: no entra en una moto. Lo lleva un cadete con auto. Si el comercio ve que el tamaño no coincide, lo corrige y te avisa; el precio del envío se actualiza.  grande chico mediano paquete tamano moto auto">
+  <summary>¿Qué tamaño de paquete elijo?</summary>
+  <p class="lead">El que mejor se parezca a tu pedido: la app te da ejemplos.</p>
+  <ol><li>Chico: entra en una mochila (ropa, accesorios, comida para una persona).</li><li>Mediano: una caja de zapatos o una bolsa de compras.</li><li>Grande: no entra en una moto. Lo lleva un cadete con auto.</li><li>Si el comercio ve que el tamaño no coincide, lo corrige y te avisa; el precio del envío se actualiza.</li></ol>
+  
+  <p class="rel">Te puede interesar: <a href="#cuanto-cuesta-el-envio">¿Cuánto cuesta el envío?</a> · <a href="#como-hago-un-pedido">¿Cómo hago un pedido?</a></p>
+</details>
+<details class="art" id="mi-pedido-no-llego-o-esta-demorado" data-role="vecino" data-text="Mi pedido no llegó o está demorado Lo resuelve primero el comercio, que es quien prepara tu pedido. Escribile al comercio por el chat del pedido o por su WhatsApp. Tené a mano el número de pedido (por ejemplo #95B9). Si no te responde, escribinos con el número de pedido y te ayudamos. demora tarda no llego retraso donde esta mi pedido seguimiento reclamo">
+  <summary>Mi pedido no llegó o está demorado</summary>
+  <p class="lead">Lo resuelve primero el comercio, que es quien prepara tu pedido.</p>
+  <ol><li>Escribile al comercio por el chat del pedido o por su WhatsApp.</li><li>Tené a mano el número de pedido (por ejemplo #95B9).</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Si no te responde, escribinos con el número de pedido y te ayudamos.</p>
+  <p class="rel">Te puede interesar: <a href="#como-se-que-el-cadete-es-el-correcto">¿Cómo sé que el cadete es el correcto?</a> · <a href="#pague-y-el-comercio-cancelo-el-pedido">Pagué y el comercio canceló el pedido</a> · <a href="#como-hablo-con-una-persona">¿Cómo hablo con una persona?</a></p>
+</details>
+<details class="art" id="pague-y-el-comercio-cancelo-el-pedido" data-role="vecino" data-text="Pagué y el comercio canceló el pedido Si el comercio no tiene stock, te devuelve la plata por el mismo medio con el que pagaste. Fijate el aviso de cancelación en la app. La devolución la hace el comercio: desde su Mercado Pago o por transferencia, según cómo pagaste. Escribile por el chat del pedido para coordinarla. Si no la recibís, escribinos con el número de pedido. devolucion reembolso cancelado sin stock me cobraron plata">
+  <summary>Pagué y el comercio canceló el pedido</summary>
+  <p class="lead">Si el comercio no tiene stock, te devuelve la plata por el mismo medio con el que pagaste.</p>
+  <ol><li>Fijate el aviso de cancelación en la app.</li><li>La devolución la hace el comercio: desde su Mercado Pago o por transferencia, según cómo pagaste.</li><li>Escribile por el chat del pedido para coordinarla.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Si no la recibís, escribinos con el número de pedido.</p>
+  <p class="rel">Te puede interesar: <a href="#como-pago">¿Cómo pago?</a> · <a href="#mi-pedido-no-llego-o-esta-demorado">Mi pedido no llegó o está demorado</a> · <a href="#como-hablo-con-una-persona">¿Cómo hablo con una persona?</a></p>
+</details>
+<details class="art" id="como-se-que-el-cadete-es-el-correcto" data-role="vecino" data-text="¿Cómo sé que el cadete es el correcto? Cada pedido con envío tiene número y código de retiro. Mirá el número de pedido en la app. El cadete lleva el mismo número. En el comercio, el cadete le dice el código de retiro antes de llevarse el pedido. Disponible desde la versión 1.1 de la app. cadete codigo numero de pedido seguridad repartidor identificar">
+  <summary>¿Cómo sé que el cadete es el correcto?</summary>
+  <p class="lead">Cada pedido con envío tiene número y código de retiro.</p>
+  <ol><li>Mirá el número de pedido en la app.</li><li>El cadete lleva el mismo número.</li><li>En el comercio, el cadete le dice el código de retiro antes de llevarse el pedido.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Disponible desde la versión 1.1 de la app.</p>
+  <p class="rel">Te puede interesar: <a href="#mi-pedido-no-llego-o-esta-demorado">Mi pedido no llegó o está demorado</a> · <a href="#cuanto-cuesta-el-envio">¿Cuánto cuesta el envío?</a></p>
+</details>
+</section>
+<section class="cat" data-role="comercio">
+  <h2>Mi negocio y catálogo</h2>
+  
+<details class="art" id="como-registro-mi-negocio" data-role="comercio" data-text="¿Cómo registro mi negocio? En 10 minutos, desde el celular. Descargá la app y creá tu cuenta con tu correo. Tocá «Tengo un negocio» → «Registrar mi negocio». Completá nombre, rubro, horario, WhatsApp y el código de referido si te lo dieron. Aceptá los Términos y tocá «Enviar solicitud». Tu negocio aparece apenas lo enviás. No hay que esperar aprobación. alta crear negocio registrarme sumar mi comercio empezar vender">
+  <summary>¿Cómo registro mi negocio?</summary>
+  <p class="lead">En 10 minutos, desde el celular.</p>
+  <ol><li>Descargá la app y creá tu cuenta con tu correo.</li><li>Tocá «Tengo un negocio» → «Registrar mi negocio».</li><li>Completá nombre, rubro, horario, WhatsApp y el código de referido si te lo dieron.</li><li>Aceptá los Términos y tocá «Enviar solicitud».</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Tu negocio aparece apenas lo enviás. No hay que esperar aprobación.</p>
+  <p class="rel">Te puede interesar: <a href="#como-completo-el-perfil">¿Cómo completo el perfil?</a> · <a href="#como-cargo-un-producto">¿Cómo cargo un producto?</a> · <a href="#me-registre-sin-el-codigo-de-referido">Me registré sin el código de referido</a></p>
+</details>
+<details class="art" id="mi-negocio-no-aparece-en-la-app" data-role="comercio" data-text="Mi negocio no aparece en la app Revisá el estado de tu plan. Entrá a Cuenta y mirá el Estado: «Período de prueba» o «Plan activo». Si la prueba o el plan vencieron, el negocio deja de mostrarse. Revisá que la ciudad del negocio sea la correcta. Tus datos quedan guardados: al renovar, vuelve a aparecer. no se ve no lo encuentran invisible oculto vencido no sale">
+  <summary>Mi negocio no aparece en la app</summary>
+  <p class="lead">Revisá el estado de tu plan.</p>
+  <ol><li>Entrá a Cuenta y mirá el Estado: «Período de prueba» o «Plan activo».</li><li>Si la prueba o el plan vencieron, el negocio deja de mostrarse.</li><li>Revisá que la ciudad del negocio sea la correcta.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Tus datos quedan guardados: al renovar, vuelve a aparecer.</p>
+  <p class="rel">Te puede interesar: <a href="#como-pago-o-renuevo-el-plan">¿Cómo pago o renuevo el plan?</a> · <a href="#que-pasa-si-no-renuevo">¿Qué pasa si no renuevo?</a> · <a href="#como-completo-el-perfil">¿Cómo completo el perfil?</a></p>
+</details>
+<details class="art" id="como-completo-el-perfil" data-role="comercio" data-text="¿Cómo completo el perfil? Cuenta → Perfil del negocio. Logo, descripción, WhatsApp con código de país (+549341…). Elegí cómo recibir pedidos: app, WhatsApp o ambas. Dirección (sin dirección no se puede pedir cadete) y horario. Tocá «Guardar cambios».  logo descripcion horario direccion datos del negocio editar negocio">
+  <summary>¿Cómo completo el perfil?</summary>
+  <p class="lead">Cuenta → Perfil del negocio.</p>
+  <ol><li>Logo, descripción, WhatsApp con código de país (+549341…).</li><li>Elegí cómo recibir pedidos: app, WhatsApp o ambas.</li><li>Dirección (sin dirección no se puede pedir cadete) y horario.</li><li>Tocá «Guardar cambios».</li></ol>
+  
+  <p class="rel">Te puede interesar: <a href="#como-cargo-un-producto">¿Cómo cargo un producto?</a> · <a href="#donde-esta-mi-pagina-web-y-mi-qr">¿Dónde está mi página web y mi QR?</a> · <a href="#como-pido-un-cadete">¿Cómo pido un cadete?</a></p>
+</details>
+<details class="art" id="como-cargo-un-producto" data-role="comercio" data-text="¿Cómo cargo un producto? Catálogo → botón naranja «+». Foto, nombre y precio (solo números, sin puntos ni $). Familia, stock y descripción si querés. Tocá «Guardar producto». Para editarlo o borrarlo, tocalo en el catálogo. agregar producto subir producto publicar precio foto stock catalogo">
+  <summary>¿Cómo cargo un producto?</summary>
+  <p class="lead">Catálogo → botón naranja «+».</p>
+  <ol><li>Foto, nombre y precio (solo números, sin puntos ni $).</li><li>Familia, stock y descripción si querés.</li><li>Tocá «Guardar producto».</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Para editarlo o borrarlo, tocalo en el catálogo.</p>
+  <p class="rel">Te puede interesar: <a href="#como-ordeno-el-catalogo-en-familias">¿Cómo ordeno el catálogo en familias?</a> · <a href="#que-productos-no-puedo-publicar">¿Qué productos no puedo publicar?</a> · <a href="#que-son-los-boosts-y-como-los-uso">¿Qué son los Boosts y cómo los uso?</a></p>
+</details>
+<details class="art" id="como-ordeno-el-catalogo-en-familias" data-role="comercio" data-text="¿Cómo ordeno el catálogo en familias? Las familias son como carpetas. Al cargar un producto, en «Familia / rubro» tocá «+ Nueva familia». Los siguientes productos los guardás tocando esa familia. Para un subgrupo, escribí la familia con una flecha: por ejemplo «TOXIC SHINE &gt; Ceras». Si un producto quedó en otra familia, usá «Mover de familia». Los subgrupos, «Mover de familia» y el orden manual llegan con la versión 1.1. carpetas categorias subgrupo ordenar mover producto familia rubro">
+  <summary>¿Cómo ordeno el catálogo en familias?</summary>
+  <p class="lead">Las familias son como carpetas.</p>
+  <ol><li>Al cargar un producto, en «Familia / rubro» tocá «+ Nueva familia».</li><li>Los siguientes productos los guardás tocando esa familia.</li><li>Para un subgrupo, escribí la familia con una flecha: por ejemplo «TOXIC SHINE &gt; Ceras».</li><li>Si un producto quedó en otra familia, usá «Mover de familia».</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Los subgrupos, «Mover de familia» y el orden manual llegan con la versión 1.1.</p>
+  <p class="rel">Te puede interesar: <a href="#como-cargo-un-producto">¿Cómo cargo un producto?</a> · <a href="#como-completo-el-perfil">¿Cómo completo el perfil?</a></p>
+</details>
+<details class="art" id="donde-esta-mi-pagina-web-y-mi-qr" data-role="comercio" data-text="¿Dónde está mi página web y mi QR? Cuenta → «Tu página web y código QR». Compartí el link en tus redes. Imprimí el QR para la vidriera o las bolsas. Si cambiás el catálogo, la página puede tardar en actualizarse. link qr pagina compartir redes instagram vidriera">
+  <summary>¿Dónde está mi página web y mi QR?</summary>
+  <p class="lead">Cuenta → «Tu página web y código QR».</p>
+  <ol><li>Compartí el link en tus redes.</li><li>Imprimí el QR para la vidriera o las bolsas.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Si cambiás el catálogo, la página puede tardar en actualizarse.</p>
+  <p class="rel">Te puede interesar: <a href="#como-completo-el-perfil">¿Cómo completo el perfil?</a> · <a href="#como-cargo-un-producto">¿Cómo cargo un producto?</a></p>
+</details>
+<details class="art" id="puedo-tener-mas-de-un-negocio" data-role="comercio" data-text="¿Puedo tener más de un negocio? Sí, hasta 3 por cuenta. En «Tus negocios» tocá «Registrar mi negocio». Si necesitás más, escribinos. varios negocios otra sucursal segundo negocio sucursales limite">
+  <summary>¿Puedo tener más de un negocio?</summary>
+  <p class="lead">Sí, hasta 3 por cuenta.</p>
+  <ol><li>En «Tus negocios» tocá «Registrar mi negocio».</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Si necesitás más, escribinos.</p>
+  <p class="rel">Te puede interesar: <a href="#como-registro-mi-negocio">¿Cómo registro mi negocio?</a> · <a href="#como-hablo-con-una-persona">¿Cómo hablo con una persona?</a></p>
+</details>
+<details class="art" id="que-productos-no-puedo-publicar" data-role="comercio" data-text="¿Qué productos no puedo publicar? Los prohibidos por los Términos y Condiciones. Sustancias ilegales o medicamentos con receta. Armas, municiones o pirotecnia. Juguetes sexuales o contenido adulto. Productos falsificados o robados. Publicarlos puede llevar a la suspensión de la cuenta. prohibido terminos reglas permitido suspension no permitido">
+  <summary>¿Qué productos no puedo publicar?</summary>
+  <p class="lead">Los prohibidos por los Términos y Condiciones.</p>
+  <ol><li>Sustancias ilegales o medicamentos con receta.</li><li>Armas, municiones o pirotecnia.</li><li>Juguetes sexuales o contenido adulto.</li><li>Productos falsificados o robados.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Publicarlos puede llevar a la suspensión de la cuenta.</p>
+  <p class="rel">Te puede interesar: <a href="#me-suspendieron-la-cuenta">Me suspendieron la cuenta</a> · <a href="#como-cargo-un-producto">¿Cómo cargo un producto?</a></p>
+</details>
+<details class="art" id="me-registre-sin-el-codigo-de-referido" data-role="comercio" data-text="Me registré sin el código de referido No se puede agregar desde la app. Escribinos por WhatsApp con el nombre del negocio y el código. Lo asignamos nosotros. referido codigo promotor vendedor me olvide el codigo">
+  <summary>Me registré sin el código de referido</summary>
+  <p class="lead">No se puede agregar desde la app.</p>
+  <ol><li>Escribinos por WhatsApp con el nombre del negocio y el código.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Lo asignamos nosotros.</p>
+  <p class="rel">Te puede interesar: <a href="#como-registro-mi-negocio">¿Cómo registro mi negocio?</a> · <a href="#como-hablo-con-una-persona">¿Cómo hablo con una persona?</a></p>
+</details>
+</section>
+<section class="cat" data-role="comercio">
+  <h2>Pedidos y cadetes</h2>
+  
+<details class="art" id="como-me-entero-de-un-pedido" data-role="comercio" data-text="¿Cómo me entero de un pedido? Te llega una notificación y lo ves en la pestaña Pedidos. Aceptá el permiso de notificaciones. Con Mercado Pago, el aviso llega cuando el pago se aprueba. Con transferencia u otros medios, el pedido te aparece enseguida como «Pago por confirmar». Si no te llegan los avisos, mirá «No me llegan las notificaciones». pedido nuevo aviso notificacion pedidos llega pedido">
+  <summary>¿Cómo me entero de un pedido?</summary>
+  <p class="lead">Te llega una notificación y lo ves en la pestaña Pedidos.</p>
+  <ol><li>Aceptá el permiso de notificaciones.</li><li>Con Mercado Pago, el aviso llega cuando el pago se aprueba.</li><li>Con transferencia u otros medios, el pedido te aparece enseguida como «Pago por confirmar».</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Si no te llegan los avisos, mirá «No me llegan las notificaciones».</p>
+  <p class="rel">Te puede interesar: <a href="#no-me-llegan-las-notificaciones">No me llegan las notificaciones</a> · <a href="#como-gestiono-un-pedido">¿Cómo gestiono un pedido?</a></p>
+</details>
+<details class="art" id="como-gestiono-un-pedido" data-role="comercio" data-text="¿Cómo gestiono un pedido? Lo movés por estados. Nuevo: revisalo. «Marcar como Confirmado» cuando empezás a prepararlo. «Marcar como Listo» cuando está armado. Entrega: retiro en el local o envío con cadete.  estado confirmar listo preparar pedido entregar">
+  <summary>¿Cómo gestiono un pedido?</summary>
+  <p class="lead">Lo movés por estados.</p>
+  <ol><li>Nuevo: revisalo.</li><li>«Marcar como Confirmado» cuando empezás a prepararlo.</li><li>«Marcar como Listo» cuando está armado.</li><li>Entrega: retiro en el local o envío con cadete.</li></ol>
+  
+  <p class="rel">Te puede interesar: <a href="#como-pido-un-cadete">¿Cómo pido un cadete?</a> · <a href="#no-tengo-stock-de-lo-que-me-pidieron">No tengo stock de lo que me pidieron</a> · <a href="#como-cobro-con-alias-o-transferencia">¿Cómo cobro con alias o transferencia?</a></p>
+</details>
+<details class="art" id="como-pido-un-cadete" data-role="comercio" data-text="¿Cómo pido un cadete? Solo para pedidos ya pagados. Cuando el pago está confirmado, marcá el pedido como «Listo»: se avisa solo a los cadetes de la ciudad (también podés tocar «Pedir cadete»). Un cadete lo acepta y retira en tu dirección. Pedile el código de retiro al cadete antes de entregarle el pedido. El envío lo paga el cliente directo al cadete. cadete envio delivery repartidor retiro moto auto">
+  <summary>¿Cómo pido un cadete?</summary>
+  <p class="lead">Solo para pedidos ya pagados.</p>
+  <ol><li>Cuando el pago está confirmado, marcá el pedido como «Listo»: se avisa solo a los cadetes de la ciudad (también podés tocar «Pedir cadete»).</li><li>Un cadete lo acepta y retira en tu dirección.</li><li>Pedile el código de retiro al cadete antes de entregarle el pedido.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> El envío lo paga el cliente directo al cadete.</p>
+  <p class="rel">Te puede interesar: <a href="#como-sabe-el-cadete-el-tamano-del-paquete">El paquete es más grande de lo que eligió el cliente</a> · <a href="#como-cobro-con-alias-o-transferencia">¿Cómo cobro con alias o transferencia?</a> · <a href="#como-gestiono-un-pedido">¿Cómo gestiono un pedido?</a></p>
+</details>
+<details class="art" id="como-sabe-el-cadete-el-tamano-del-paquete" data-role="comercio" data-text="El paquete es más grande de lo que eligió el cliente Corregí el tamaño antes de que un cadete lo tome. En el pedido, buscá «Tamaño del paquete» y tocá Chico, Mediano o Grande. El valor del envío se actualiza y se le avisa al cliente. Un paquete grande (no entra en una moto) solo lo ve y lo acepta un cadete con auto. Una vez que un cadete aceptó el viaje, el tamaño ya no se puede cambiar. tamano grande chico mediano paquete auto moto cambiar tamano">
+  <summary>El paquete es más grande de lo que eligió el cliente</summary>
+  <p class="lead">Corregí el tamaño antes de que un cadete lo tome.</p>
+  <ol><li>En el pedido, buscá «Tamaño del paquete» y tocá Chico, Mediano o Grande.</li><li>El valor del envío se actualiza y se le avisa al cliente.</li><li>Un paquete grande (no entra en una moto) solo lo ve y lo acepta un cadete con auto.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Una vez que un cadete aceptó el viaje, el tamaño ya no se puede cambiar.</p>
+  <p class="rel">Te puede interesar: <a href="#como-pido-un-cadete">¿Cómo pido un cadete?</a> · <a href="#como-gestiono-un-pedido">¿Cómo gestiono un pedido?</a></p>
+</details>
+<details class="art" id="no-tengo-stock-de-lo-que-me-pidieron" data-role="comercio" data-text="No tengo stock de lo que me pidieron Tocá «No tengo stock» en el pedido. El pedido se cancela y se avisa al cliente. Si ya estaba pagado, devolvé el dinero por el mismo medio: desde tu Mercado Pago (Actividad → el cobro → Devolver dinero) o por transferencia.  cancelar sin stock devolver reembolso agotado">
+  <summary>No tengo stock de lo que me pidieron</summary>
+  <p class="lead">Tocá «No tengo stock» en el pedido.</p>
+  <ol><li>El pedido se cancela y se avisa al cliente.</li><li>Si ya estaba pagado, devolvé el dinero por el mismo medio: desde tu Mercado Pago (Actividad → el cobro → Devolver dinero) o por transferencia.</li></ol>
+  
+  <p class="rel">Te puede interesar: <a href="#como-gestiono-un-pedido">¿Cómo gestiono un pedido?</a> · <a href="#pague-y-el-comercio-cancelo-el-pedido">Pagué y el comercio canceló el pedido</a></p>
+</details>
+</section>
+<section class="cat" data-role="comercio">
+  <h2>Plan, pagos y Boosts</h2>
+  
+<details class="art" id="cuanto-cuesta-activa" data-role="comercio" data-text="¿Cuánto cuesta Activa? 30 días gratis y después $20.000 por mes. No se pide tarjeta para empezar. No hay débito automático ni permanencia. Activa no cobra comisión por tus ventas. Precio vigente al 16/10/2026. precio plan mensual gratis prueba suscripcion comision">
+  <summary>¿Cuánto cuesta Activa?</summary>
+  <p class="lead">30 días gratis y después $20.000 por mes.</p>
+  <ol><li>No se pide tarjeta para empezar.</li><li>No hay débito automático ni permanencia.</li><li>Activa no cobra comisión por tus ventas.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Precio vigente al 16/10/2026.</p>
+  <p class="rel">Te puede interesar: <a href="#como-pago-o-renuevo-el-plan">¿Cómo pago o renuevo el plan?</a> · <a href="#que-pasa-si-no-renuevo">¿Qué pasa si no renuevo?</a> · <a href="#como-doy-de-baja-el-plan">¿Cómo doy de baja el plan?</a></p>
+</details>
+<details class="art" id="como-pago-o-renuevo-el-plan" data-role="comercio" data-text="¿Cómo pago o renuevo el plan? Depende de tu celular. Android: Cuenta → pagás con Mercado Pago. iPhone: escribinos por WhatsApp y coordinamos el pago. Cada pago suma 30 días. renovar pagar plan suscripcion mensualidad vencimiento reactivar">
+  <summary>¿Cómo pago o renuevo el plan?</summary>
+  <p class="lead">Depende de tu celular.</p>
+  <ol><li>Android: Cuenta → pagás con Mercado Pago.</li><li>iPhone: escribinos por WhatsApp y coordinamos el pago.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Cada pago suma 30 días.</p>
+  <p class="rel">Te puede interesar: <a href="#cuanto-cuesta-activa">¿Cuánto cuesta Activa?</a> · <a href="#que-pasa-si-no-renuevo">¿Qué pasa si no renuevo?</a> · <a href="#mi-negocio-no-aparece-en-la-app">Mi negocio no aparece en la app</a></p>
+</details>
+<details class="art" id="que-pasa-si-no-renuevo" data-role="comercio" data-text="¿Qué pasa si no renuevo? No se te cobra nada. Tu negocio deja de mostrarse al público. Tus datos y tu catálogo quedan guardados. Cuando renovás, vuelve a aparecer.  vence vencido expira no pago baja dejar de pagar">
+  <summary>¿Qué pasa si no renuevo?</summary>
+  <p class="lead">No se te cobra nada.</p>
+  <ol><li>Tu negocio deja de mostrarse al público.</li><li>Tus datos y tu catálogo quedan guardados.</li><li>Cuando renovás, vuelve a aparecer.</li></ol>
+  
+  <p class="rel">Te puede interesar: <a href="#como-pago-o-renuevo-el-plan">¿Cómo pago o renuevo el plan?</a> · <a href="#mi-negocio-no-aparece-en-la-app">Mi negocio no aparece en la app</a> · <a href="#como-doy-de-baja-el-plan">¿Cómo doy de baja el plan?</a></p>
+</details>
+<details class="art" id="como-doy-de-baja-el-plan" data-role="comercio" data-text="¿Cómo doy de baja el plan? No hay nada que cancelar: si no pagás el mes, no se renueva. No hay débito automático. Si además querés borrar tus datos: Cuenta → «Eliminar mi cuenta».  cancelar baja darme de baja suscripcion dejar">
+  <summary>¿Cómo doy de baja el plan?</summary>
+  <p class="lead">No hay nada que cancelar: si no pagás el mes, no se renueva.</p>
+  <ol><li>No hay débito automático.</li><li>Si además querés borrar tus datos: Cuenta → «Eliminar mi cuenta».</li></ol>
+  
+  <p class="rel">Te puede interesar: <a href="#que-pasa-si-no-renuevo">¿Qué pasa si no renuevo?</a> · <a href="#quiero-eliminar-mi-cuenta">Quiero eliminar mi cuenta</a></p>
+</details>
+<details class="art" id="que-son-los-boosts-y-como-los-uso" data-role="comercio" data-text="¿Qué son los Boosts y cómo los uso? Créditos para la oferta del día: tu producto en la pantalla principal durante 24 horas. Al crear o editar un producto, activá «Poner como oferta del día». Cada oferta usa 1 Boost y se apaga sola a las 24 horas. Arrancás con 10 Boosts de regalo. Se ven en Cuenta. Más Boosts: 1 por $1.500, 5 por $6.500, 10 por $12.000. Si apagás la oferta antes, el Boost no se devuelve. creditos oferta del dia promocionar destacar publicidad boost">
+  <summary>¿Qué son los Boosts y cómo los uso?</summary>
+  <p class="lead">Créditos para la oferta del día: tu producto en la pantalla principal durante 24 horas.</p>
+  <ol><li>Al crear o editar un producto, activá «Poner como oferta del día».</li><li>Cada oferta usa 1 Boost y se apaga sola a las 24 horas.</li><li>Arrancás con 10 Boosts de regalo. Se ven en Cuenta.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Más Boosts: 1 por $1.500, 5 por $6.500, 10 por $12.000. Si apagás la oferta antes, el Boost no se devuelve.</p>
+  <p class="rel">Te puede interesar: <a href="#como-cargo-un-producto">¿Cómo cargo un producto?</a> · <a href="#cuanto-cuesta-activa">¿Cuánto cuesta Activa?</a></p>
+</details>
+<details class="art" id="como-conecto-mercado-pago" data-role="comercio" data-text="¿Cómo conecto Mercado Pago? Es opcional. Cuenta → «Cobros dentro de la app» → «Conectar Mercado Pago». Iniciá sesión en Mercado Pago y aceptá los permisos. La plata va directo a tu cuenta. Podés quitar el permiso cuando quieras en Mercado Pago → Aplicaciones conectadas. mercadopago cobrar cuenta vincular conectar cobros">
+  <summary>¿Cómo conecto Mercado Pago?</summary>
+  <p class="lead">Es opcional.</p>
+  <ol><li>Cuenta → «Cobros dentro de la app» → «Conectar Mercado Pago».</li><li>Iniciá sesión en Mercado Pago y aceptá los permisos.</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> La plata va directo a tu cuenta. Podés quitar el permiso cuando quieras en Mercado Pago → Aplicaciones conectadas.</p>
+  <p class="rel">Te puede interesar: <a href="#como-cobro-con-alias-o-transferencia">¿Cómo cobro con alias o transferencia?</a> · <a href="#como-gestiono-un-pedido">¿Cómo gestiono un pedido?</a></p>
+</details>
+<details class="art" id="como-cobro-con-alias-o-transferencia" data-role="comercio" data-text="¿Cómo cobro con alias o transferencia? Lo activás en Cuenta → «Formas de cobro», sin pagar comisión de pasarela. Entrá a Cuenta → «Formas de cobro (alias, transferencia, otros)». Activá «Transferencia a tu alias» y cargá tu alias (de Mercado Pago, banco o billetera). Si querés, activá «Otros medios o cuotas» para coordinar tarjeta, un link de pago o efectivo por el chat. Cuando un cliente avise que transfirió, mirá tu cuenta (no solo la captura) y tocá «Recibí el pago». Podés ofrecer Mercado Pago, alias y otros medios a la vez. Solo confirmá cuando ya viste la plata en tu cuenta. Disponible desde la versión nueva de la app. alias transferencia cbu cvu otros medios cuotas sin comision recibi el pago comprobante">
+  <summary>¿Cómo cobro con alias o transferencia?</summary>
+  <p class="lead">Lo activás en Cuenta → «Formas de cobro», sin pagar comisión de pasarela.</p>
+  <ol><li>Entrá a Cuenta → «Formas de cobro (alias, transferencia, otros)».</li><li>Activá «Transferencia a tu alias» y cargá tu alias (de Mercado Pago, banco o billetera).</li><li>Si querés, activá «Otros medios o cuotas» para coordinar tarjeta, un link de pago o efectivo por el chat.</li><li>Cuando un cliente avise que transfirió, mirá tu cuenta (no solo la captura) y tocá «Recibí el pago».</li></ol>
+  <p class="note"><strong>Si no se resuelve:</strong> Podés ofrecer Mercado Pago, alias y otros medios a la vez. Solo confirmá cuando ya viste la plata en tu cuenta. Disponible desde la versión nueva de la app.</p>
+  <p class="rel">Te puede interesar: <a href="#como-conecto-mercado-pago">¿Cómo conecto Mercado Pago?</a> · <a href="#como-pido-un-cadete">¿Cómo pido un cadete?</a> · <a href="#como-gestiono-un-pedido">¿Cómo gestiono un pedido?</a></p>
+</details>
+</section>
+  <p class="empty" id="empty">No encontramos nada con eso. Probá con otras palabras o escribinos.</p>
+  <div class="contact">
+    <strong>¿Seguís con dudas?</strong>
+    <p><a class="btn" href="https://wa.me/5493417381220?text=Hola%2C%20necesito%20ayuda%20con%20Activa%20Local.">Hablar con una persona</a></p>
+    
+    <p>Correo: <a href="mailto:admin.activavgg@gmail.com">admin.activavgg@gmail.com</a></p>
+    <p>Nunca te vamos a pedir tu contraseña ni códigos por WhatsApp.</p>
+  </div>
+</main>
+<script>
+  var norm = function (t) { return t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9ñ\s]/g, ' ').replace(/\s+/g, ' ').trim(); };
+  var aud = 'todos', q = document.getElementById('q');
+  function apply() {
+    var tokens = norm(q.value).split(' ').filter(Boolean), shown = 0;
+    document.querySelectorAll('.art').forEach(function (el) {
+      var roleOk = aud === 'todos' || el.dataset.role === 'todos' || el.dataset.role === aud;
+      var text = norm(el.dataset.text), textOk = tokens.every(function (t) { return text.indexOf(t) !== -1; });
+      var ok = roleOk && textOk; el.classList.toggle('hidden', !ok); if (ok) shown++;
+    });
+    document.querySelectorAll('.cat').forEach(function (c) { c.classList.toggle('hidden', !c.querySelector('.art:not(.hidden)')); });
+    document.getElementById('empty').style.display = shown ? 'none' : 'block';
+  }
+  q.addEventListener('input', apply);
+  document.querySelectorAll('.chip').forEach(function (b) {
+    b.addEventListener('click', function () {
+      aud = b.dataset.aud;
+      document.querySelectorAll('.chip').forEach(function (x) { x.classList.toggle('on', x === b); });
+      apply();
+    });
+  });
+  if (location.hash) { var t = document.getElementById(location.hash.slice(1)); if (t && t.tagName === 'DETAILS') t.open = true; }
+  window.addEventListener('hashchange', function () { var t = document.getElementById(location.hash.slice(1)); if (t && t.tagName === 'DETAILS') t.open = true; });
+</script>
+</body>
+</html>
