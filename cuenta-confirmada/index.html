@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Correo confirmado — Activa Local</title>
+<meta name="robots" content="noindex" />
+<meta name="referrer" content="no-referrer" />
+<style>
+  :root { --brand: #2E5CFF; --ink: #171A24; --muted: #787D8C; --bg: #F4F5FA; --green: #1FAE6E; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; display: flex; flex-direction: column; }
+  header { background: linear-gradient(135deg, #FF7A3D, #7B4FE0 55%, #2E5CFF); color: #fff; padding: 28px 20px; text-align: center; font-weight: 800; font-size: 22px; }
+  main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 24px 20px; }
+  .card { background: #fff; border-radius: 18px; padding: 28px 24px; max-width: 420px; width: 100%; text-align: center; box-shadow: 0 2px 14px rgba(23,26,36,.06); }
+  .tick { width: 56px; height: 56px; border-radius: 50%; background: #DEF3E9; color: var(--green); font-size: 30px; line-height: 56px; margin: 0 auto 14px; }
+  h1 { font-size: 21px; margin: 0 0 8px; }
+  p { font-size: 15px; line-height: 1.55; margin: 0 0 14px; color: var(--muted); }
+  a.btn { display: block; background: var(--brand); color: #fff; text-decoration: none; padding: 13px; border-radius: 12px; font-weight: 700; margin-top: 8px; }
+  a.link { display: inline-block; margin-top: 14px; color: var(--brand); font-size: 14px; font-weight: 600; text-decoration: none; }
+</style>
+</head>
+<body>
+<header>Activa Local</header>
+<main>
+  <div class="card" id="ok">
+    <div class="tick">✓</div>
+    <h1>¡Listo! Confirmamos tu correo</h1>
+    <p>Ya podés volver a la app de Activa Local e ingresar con tu correo y tu contraseña.</p>
+    <a class="btn" href="activavgg://">Abrir la app</a>
+    <a class="link" href="../ayuda/">¿Necesitás ayuda?</a>
+  </div>
+  <div class="card" id="recovery" style="display:none">
+    <div class="tick">🔑</div>
+    <h1>Casi listo para cambiar tu contraseña</h1>
+    <p>Copiá la dirección completa de esta página (la barra de arriba del navegador), volvé a la app de Activa Local y pegala donde dice “URL del correo”.</p>
+    <a class="btn" href="activavgg://recuperar-contrasena">Volver a la app</a>
+    <a class="link" href="../ayuda/#olvide-mi-contrasena">Ver los pasos</a>
+  </div>
+</main>
+<script>
+  // El enlace de "Olvidé mi contraseña" también termina acá: se detecta por el tipo que trae la dirección.
+  if (/type=recovery/.test(location.hash)) {
+    document.getElementById('ok').style.display = 'none';
+    document.getElementById('recovery').style.display = 'block';
+  }
+</script>
+</body>
+</html>
