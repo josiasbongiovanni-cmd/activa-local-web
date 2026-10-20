@@ -1,0 +1,9 @@
+{
+  "name": "activa-local-web",
+  "private": true,
+  "type": "module",
+  "description": "Páginas públicas de Activa Local (GitHub Pages). Las páginas de negocios las regenera .github/workflows/refresh-negocios.yml.",
+  "dependencies": {
+    "@supabase/supabase-js": "2.116.0"
+  }
+}
